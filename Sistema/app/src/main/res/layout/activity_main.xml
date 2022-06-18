@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".Escaner">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textEje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Ejemplo código:"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/tomate" />
+
+            <Button
+                android:id="@+id/btnScan"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#ffa500"
+                android:gravity="center"
+                android:text="Escanear Producto"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textCod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="Código:"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtResultado"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="20sp"
+                app:boxBackgroundMode="outline" />
+
+            <TextView
+                android:id="@+id/textNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="Nombre:"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="20sp"
+                app:boxBackgroundMode="outline" />
+
+            <TextView
+                android:id="@+id/textMarca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="Marca:"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtMarca"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="20sp"
+                app:boxBackgroundMode="outline" />
+
+            <TextView
+                android:id="@+id/textPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="Peso:"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtPeso"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="20sp"
+                app:boxBackgroundMode="outline" />
+
+            <TextView
+                android:id="@+id/textCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="Almacenamiento:"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:id="@+id/ListaAlma"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Estantería"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="16sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Cantidad"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="16sp"
+                        android:visibility="gone"/>
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
